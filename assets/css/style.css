@@ -26,7 +26,8 @@ Loaders
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgb(3, 151, 131)
+  background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+  box-shadow: inset 0px 100vh 0px rgba(248, 248, 248, 0.5);
 }
 
 #preloader:before {
