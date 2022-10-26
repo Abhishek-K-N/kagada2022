@@ -193,7 +193,7 @@ Header
 Navigation Menu
 */
 .countdown_time{
-  display: flex;
+  display: inline;
   margin: auto;
 }
 .single_countdown{
