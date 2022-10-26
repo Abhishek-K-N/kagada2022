@@ -14,6 +14,7 @@ document.onreadystatechange = function() {
         "body").style.visibility = "visible";
   }
 };
+
   /**
    * Easy selector helper function
    */
@@ -232,6 +233,9 @@ document.onreadystatechange = function() {
       clickable: true
     }
   });
+  /* 
+  Features Section
+  */
   function  myfunction1()
   {
     alert("Technical paper Presentation is one of the divisions in Kagada, where UG/PG/Ph.D. students of various institutions are allowed to present their technical papers in standard IEEE Paper format. There will be 2 tracks namely UG/PG Paper Presentation and WIE Paper Presentation.");
@@ -252,3 +256,40 @@ document.onreadystatechange = function() {
   {
     alert("Food for Cause is an initiative taken up by zealous and energetic volunteers where they will have to prepare and sell delicious snacks and dishes to the participants. The profit received from this initiative will be donated to an NGO. Food for Cause proves to be a successful and an exciting journey for students who are organizing and also acts as a refreshing spot for the participants too.");
   }
+
+  /*
+  Countdown
+  */
+
+  var countDownDate = new Date("Nov 2, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("day").innerHTML = days ;
+  document.getElementById("hour").innerHTML = hours ;
+  document.getElementById("min").innerHTML = minutes;
+  document.getElementById("sec").innerHTML = seconds;
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+$('#clock').countdown('2022/11/4', function(event) {
+  $(this).html(event.strftime('<div class="countdown_time"><div class="single_countdown"><h3>%D</h3><span>days</span></div><div class="single_countdown"><h3>%H</h3><span>Hours</span></div><div class="single_countdown"><h3>%M</h3><span>Minutes</span></div><div class="single_countdown"><h3>%S</h3><span>Seconds</span></div></div>'));
+});

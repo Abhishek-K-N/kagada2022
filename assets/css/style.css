@@ -192,6 +192,17 @@ Header
 /*
 Navigation Menu
 */
+.countdown_time{
+  display: flex;
+  margin: auto;
+}
+.single_countdown{
+  padding: 7px;
+}
+.single_countdown h3{
+  font-weight: bolder;
+
+}
 /**
 * Desktop Navigation 
 */
