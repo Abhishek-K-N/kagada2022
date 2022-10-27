@@ -552,7 +552,7 @@ Hero Section
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: fit-content;
   }
 
   #hero .animated {
@@ -571,7 +571,7 @@ Hero Section
 
 @media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    height: fit-content;
   }
 
   #hero h1 {
