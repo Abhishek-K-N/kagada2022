@@ -3,6 +3,8 @@
 /*
 General
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -193,6 +195,7 @@ Header
 Navigation Menu
 */
 .countdown_time{
+  text-align: center;
   display: flex;
   margin: auto;
 }
@@ -202,6 +205,25 @@ Navigation Menu
 .single_countdown h3{
   font-weight: bolder;
 
+}
+
+
+.countdown_time_text {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right top, #006eff,#0400fa);
+   background-size: 50% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 8vw;
+  animation: gradientAnim 7.5s ease  alternate infinite;
+}
+
+
+@keyframes gradientAnim {
+  to {
+    background-position: 100% top;
+  }
 }
 /**
 * Desktop Navigation 
