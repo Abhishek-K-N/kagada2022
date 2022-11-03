@@ -261,7 +261,7 @@ document.onreadystatechange = function() {
   Countdown
   */
 
-  var countDownDate = new Date("Nov 3, 2022 00:00:00").getTime();
+  var countDownDate = new Date("Nov 7, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
